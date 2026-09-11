@@ -16,10 +16,11 @@ int main()
     if(total%2 != 0)
     {
         cout<<"NO\n";
+        return 0;
     }
     else
     {
-        cout<<"YES\n";
+        cout<<"YES"<<"\n";
         target=total/2;
         for(int i=n;i>0;i--)
         {
@@ -33,16 +34,17 @@ int main()
                 sumB.push_back(i);
             }
         }
+        cout<< sumA.size()<<"\n";
+        for(int x:sumA)
+        {
+            cout<<x<<" ";
+        }
+        cout<< sumB.size()<<"\n";
+        for(int x:sumB)
+        {
+            cout<<x<<" ";
+        }
+        return 0;
     }
-    cout<< sumA.size();
-    for(int x:sumA)
-    {
-        cout<<x<<" ";
-    }
-    cout<< sumB.size();
-    for(int x:sumB)
-    {
-        cout<<x<<" ";
-    }
-    return 0;
+    
 }
